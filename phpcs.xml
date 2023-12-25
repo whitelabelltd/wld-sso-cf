@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ruleset name="Project Rules">
+	<rule ref="WordPress">
+		<exclude name="WordPress.Security.NonceVerification.Missing" />
+		<!-- Include Relative location. -->
+		<include-pattern>.</include-pattern>
+		<!-- Exclude the Composer Vendor directory. -->
+		<exclude-pattern>/vendor/*</exclude-pattern>
+		<!-- Exclude the GitHub directory. -->
+		<exclude-pattern>/.github/*</exclude-pattern>
+		<!-- Exclude the Assets directory. -->
+		<exclude-pattern>/assets/*</exclude-pattern>
+		<!-- Exclude the Assets Source directory. -->
+		<exclude-pattern>/_source/*</exclude-pattern>
+		<!-- Exclude all index.php files. -->
+		<exclude-pattern>*/index.php</exclude-pattern>
+	</rule>
+</ruleset>

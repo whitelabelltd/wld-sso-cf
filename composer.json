@@ -1,0 +1,57 @@
+{
+    "require": {
+        "firebase/php-jwt": "^6.10",
+        "yahnis-elsts/plugin-update-checker": "^5.2"
+    },
+    "config": {
+        "platform": {
+            "php": "8.1"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "WLD_SSO_CF\\": "src/"
+        },
+        "classmap": [
+            "vendor"
+        ]
+    },
+    "require-dev": {
+        "brianhenryie/strauss": "^0.14"
+    },
+    "scripts": {
+        "strauss": [
+            "vendor/bin/strauss"
+        ],
+        "post-install-cmd": [
+            "@strauss",
+            "composer dumpautoload"
+        ],
+        "post-update-cmd": [
+            "@strauss",
+            "composer dumpautoload"
+        ]
+    },
+    "extra": {
+        "strauss": {
+            "target_directory": "vendor",
+            "namespace_prefix": "WLD_SSO_CF\\Dependencies\\",
+            "classmap_prefix": "WLD_SSO_CF_Dependencies_",
+            "constant_prefix": "WLD_SSOCF_",
+            "exclude_from_prefix": {
+                "packages": [
+                    "yahnis-elsts/plugin-update-checker"
+                ],
+                "namespaces": [
+                ],
+                "file_patterns": [
+                ]
+            }
+        }
+    },
+    "config": {
+        "classmap-authoritative": true,
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}

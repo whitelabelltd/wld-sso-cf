@@ -1,0 +1,297 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WLD SSO Cloudflare\n"
+"POT-Creation-Date: 2023-12-25 15:36+1300\n"
+"PO-Revision-Date: 2023-12-25 15:36+1300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wld-sso-cf.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+
+#: includes/helpers/class-log.php:146
+msgid "Type"
+msgstr ""
+
+#: includes/helpers/class-log.php:150
+msgid "Date (UTC)"
+msgstr ""
+
+#: includes/helpers/class-log.php:154
+msgid "User"
+msgstr ""
+
+#: includes/helpers/class-log.php:158
+msgid "URI "
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:246
+msgid "JWT Token is invalid"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:264
+msgid "JWT Payload missing email data"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:295
+msgid "Could not create a new WordPress User"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:302
+msgid "User does not exist or is not allowed to login"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:581
+msgid ""
+"Cloudflare Zero Trust SSO is Disabled when not on the Cloudflare Network. "
+"Please ensure you are on the Cloudflare Network."
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:586
+msgid "Cloudflare Zero Trust SSO requires a Team Domain to be set"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:591
+msgid "This will not work on a local environment"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:629
+msgid "Log in with Cloudflare"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:697
+msgid "Please use your identity provider to change your password"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:718
+msgid "ERROR: Please use SSO to sign-in"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1251
+msgid "Debug Logs"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1260
+msgid "No Logs Found"
+msgstr ""
+
+#. translators: Describes how the user will need to use the App Launcher on Cloudflare Zero Trust with a help link
+#: includes/modules/class-cfaccess.php:1272
+#, php-format
+msgid ""
+"You will need to add the WordPress site as a '%s' on Cloudflare Zero Trust."
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1276
+msgid "Cloudflare Access"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1277
+msgid ""
+"When setup using the App Launcher, visiting the wp-login.php page will "
+"require the user to be logged into Cloudflare (CF) Access (it will redirect "
+"them otherwise to login using CF Access)"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1278
+msgid ""
+"Warning: Setting up CF Access using the app launcher will block any other "
+"users wanting to login to WordPress that cannot login to CF Access"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1280
+msgid "How it Works"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1281
+msgid ""
+"When a Cloudflare Team Domain is added, WordPress will auto get the JWT "
+"Certificates from Cloudflare on a regular basis. This allows the plugin to "
+"check the request from Cloudflare Access for SSO is valid as well as "
+"determine the user."
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1282
+msgid ""
+"If a WP User matches the one validated by Cloudflare, it logs the user in to "
+"WordPress. Users are matched using the Email address. Should no WP User "
+"exist with the email address, the login is denied, unless the option is "
+"enabled for creating a new WP User."
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1283
+msgid ""
+"You can login by going to the Cloudflare Zero Trust App Dashboard and "
+"clicking on your app or just visit the WP-Login Page, it will then login the "
+"relevant user automatically."
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1285
+msgid "App Launcher"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1292
+msgid ""
+"The Path should point to 'wp-login.php', with the subdomain and domain "
+"matching your site. Ensure the site is proxied (orange cloud) in your "
+"Cloudflare DNS."
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1294
+msgid "Path:"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1298
+msgid "Example: "
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1312
+msgctxt "Plugin Setting Section Title"
+msgid "Cloudflare"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1313
+msgctxt "Plugin Setting Section Description"
+msgid "Manage Cloudflare related options."
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1332
+msgctxt "Plugin Setting Label"
+msgid "Cloudflare Team Domain"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1334
+msgctxt "CF Access Subdomain Setting Placeholder"
+msgid ""
+"if your Cloudflare URL is 'mydomain.cloudflareaccess.com', then your team "
+"domain would be 'mydomain'"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1344
+msgctxt "Plugin Setting Label"
+msgid "Add SSO Button to WP Login"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1345
+msgctxt "Force SSO Setting Help text"
+msgid ""
+"Adds a Cloudflare Access button to the WP Login page. Option is always set "
+"to YES when forcing SSO"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1350
+#: includes/modules/class-cfaccess.php:1363
+#: includes/modules/class-cfaccess.php:1377
+#: includes/modules/class-cfaccess.php:1390
+msgctxt "Plugin Setting Radio Label"
+msgid "Yes"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1351
+#: includes/modules/class-cfaccess.php:1364
+#: includes/modules/class-cfaccess.php:1378
+#: includes/modules/class-cfaccess.php:1391
+msgctxt "Plugin Setting Radio Label"
+msgid "No"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1357
+msgctxt "Plugin Setting Label"
+msgid "Create new WP User"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1358
+msgctxt "Create WP User Setting Help text"
+msgid ""
+"When doing a successfull SSO login, it creates a new WP User (User level "
+"determined by 'New User Default Role' WP Option) if they do not already "
+"exist. Ignores the 'Anyone can register' WP Setting"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1370
+msgctxt "Plugin Setting Label"
+msgid "Force SSO for Logins"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1371
+msgctxt "Force SSO Setting Help text"
+msgid ""
+"Only allows logins using SSO and disables WP Logins. Always shows the SSO "
+"Button when enabled."
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1372
+msgctxt "Force SSO Setting Warning Text"
+msgid ""
+"WARNING: Do NOT enable until you have tested SSO works correctly, or you may "
+"lose access to your site"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1384
+msgctxt "Plugin Setting Label"
+msgid "Debug Log"
+msgstr ""
+
+#: includes/modules/class-cfaccess.php:1385
+msgctxt "Force SSO Setting Help text"
+msgid "Enables the debug log at the bottom of this page"
+msgstr ""
+
+#: includes/modules/class-options.php:327
+msgctxt "Page Menu Title"
+msgid "SSO Options"
+msgstr ""
+
+#: includes/modules/class-options.php:328
+msgctxt "Settings Menu Title"
+msgid "SSO"
+msgstr ""
+
+#: includes/modules/class-options.php:344
+msgctxt "Plugin Options Page Title"
+msgid "Cloudflare Zero Trust SSO Options"
+msgstr ""
+
+#: includes/modules/class-options.php:354
+msgctxt "Plugin Options Save Button"
+msgid "Save Changes"
+msgstr ""
+
+#: includes/modules/class-options.php:377
+msgctxt "Plugin Option Radio Label"
+msgid "Yes"
+msgstr ""
+
+#: includes/modules/class-options.php:380
+msgctxt "Plugin Option Radio Label"
+msgid "No"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WLD SSO Cloudflare"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Replaces WP-Login with Cloudflare Access"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Whitelabel Digital"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://whitelabel.ltd"
+msgstr ""
